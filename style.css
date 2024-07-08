@@ -1,0 +1,792 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.golos-text- {
+  font-family: "Golos Text", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  position: relative;
+}
+.mini-header {
+  width: 100%;
+}
+.mini-header img {
+  width: 100%;
+}
+.main-header {
+  width: 100%;
+  background-color: #29426e;
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+}
+.header-search {
+  width: 33.33%;
+  padding-inline: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.header-search input {
+  width: 100%;
+  padding-block: 25px;
+  padding-left: 50px;
+  font-size: 25px;
+  border-radius: 50px;
+  border-right: 1px solid black;
+}
+.header-search div {
+  position: absolute;
+  right: 50px;
+  font-size: 25px;
+  padding-left: 30px;
+  border-left: 1px solid rgb(161 156 156);
+  display: flex;
+  align-items: center;
+}
+.header-search div i {
+  padding-right: 10px;
+}
+.header-center {
+  width: 33.33%;
+  padding-inline: 15px;
+  text-align: center;
+}
+.header-center a {
+  padding-block: 0.3125rem;
+}
+.header-center a img {
+  width: 160px;
+  height: 57px;
+}
+
+.header-right {
+  width: 33.33%;
+  padding-inline: 15px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header-right .call,
+.login,
+.cart {
+  display: flex;
+  align-items: center;
+}
+.header-right i {
+  font-size: 40px;
+  padding-right: 15px;
+}
+.text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.value {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 400;
+}
+.login,
+.cart {
+  padding-left: 30px;
+}
+.bottom-header {
+  width: 100%;
+  padding-left: 25px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.navbar {
+  width: 100%;
+  min-width: 1750px;
+}
+.navbar > ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar li {
+  margin-inline: 16px;
+  padding-block: 30px;
+}
+.navbar li:first-child {
+  margin-left: 0px;
+}
+.navbar li a {
+  font-family: "Golos Text", sans-serif;
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.btn-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.btn-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin: 0px 3px;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Golos Text";
+}
+.btn-container a i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.btn-container a:first-child {
+  background-color: #cedd5e;
+  color: #000;
+}
+.btn-container a:last-child {
+  background-color: #d82670;
+  color: #fff;
+}
+
+/*-------------------------------------              HEADER CSS FINISHED                  ---------------------------------------- */
+
+.banner-wrapper {
+  width: 100%;
+  font-family: "Golos Text", sans-serif;
+  padding-inline: 15px;
+  display: flex;
+}
+.banner {
+  width: 66.6667%;
+  height: 550px;
+  padding-right: 15px;
+  position: relative;
+}
+.banner > img {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+}
+.title {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  transform: translate(-50%);
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 600;
+  font-family: "Golos Text";
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transition-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+}
+.title > div:first-child {
+  animation-delay: 0.2s;
+}
+.title > div:last-child {
+  animation-delay: 0.4s;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.waves {
+  position: absolute;
+  top: 671px;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  z-index: 2;
+}
+.parallax {
+  transition-duration: 0s;
+  background-size: cover;
+  background-attachment: fixed;
+  background-attachment: inherit !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  overflow: hidden;
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+.title a {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  line-height: 65px;
+  font-weight: 600;
+  font-family: "Golos Text";
+  border-radius: 100px;
+  border-width: 2px;
+  padding: 25px 45px;
+  border-color: #cedd5e;
+  background-color: #cedd5e;
+  transition: all 0.1s;
+}
+.title a:hover {
+  background-color: #fff;
+}
+
+.side-content {
+  width: 33.33%;
+  height: 550px;
+  padding-inline: 15px;
+}
+.side-content div {
+  object-fit: contain;
+  object-position: center;
+  width: 682px;
+  height: 85%;
+  position: relative;
+}
+.side-content > div:first-child img {
+  object-fit: contain;
+  object-position: bottom;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.side-content > div:last-child img {
+  object-fit: contain;
+  object-position: bottom;
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  /* margin-bottom: 30px; */
+}
+.side-wrapper {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: white;
+}
+.bottom {
+  color: #000;
+}
+.side-wrapper > span {
+  letter-spacing: 1px;
+  line-height: 18px;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Golos Text";
+  border-bottom: 1px solid;
+}
+.side-wrapper > h5 {
+  /* color: #ffffff; */
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.side-wrapper > a {
+  padding: 8px 18px;
+  font-size: 25px;
+  border-radius: 35px;
+  border: 2px solid;
+  background-color: #fff;
+  border-color: #fff;
+  color: #121310;
+  text-decoration: none;
+  font-family: "Golos Text";
+}
+.bottom > a {
+  background-color: #cedd5e;
+  border: none;
+}
+.top > a:hover {
+  background-color: #d82670;
+}
+.bottom > a:hover {
+  background-color: #fff;
+  border: none;
+}
+.icons-container {
+  position: absolute;
+  top: 180%;
+  padding-block: 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.icons-container > div {
+  padding-inline: 15px;
+  display: flex;
+  align-items: center;
+}
+.icons-container > div i {
+  font-size: 72px;
+  padding-right: 20px;
+}
+.icons-container > div:last-child {
+  box-sizing: border-box;
+}
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 0px;
+  color: #000;
+}
+.content {
+  color: #828282;
+  font-size: 28px;
+  line-height: 45px;
+}
+.image-gallery {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-inline: 15px;
+  position: absolute;
+  top: 208%;
+}
+.image-gallery > .img-wrapper:nth-child(1) {
+  width: 33.33%;
+  position: relative;
+  padding-inline: 15px;
+}
+.image-gallery > .img-wrapper:nth-child(2) {
+  width: 33.33%;
+  position: relative;
+  padding-inline: 15px;
+}
+.image-gallery > .img-wrapper:nth-child(3) {
+  width: 33.33%;
+  padding-inline: 15px;
+  position: relative;
+}
+.img-wrapper img {
+  object-fit: contain;
+  object-position: center;
+  border-radius: 10px;
+  width: 100%;
+}
+.img-wrapper:nth-child(1) div {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  color: white;
+  font-family: "Golos Text";
+}
+.img-wrapper:nth-child(2) div {
+  position: absolute;
+  top: 150px;
+  left: 110px;
+  color: white;
+  font-family: "Golos Text";
+  text-align: center;
+}
+.img-wrapper:nth-child(3) div {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  color: white;
+  font-family: "Golos Text";
+}
+.img-wrapper div span {
+  letter-spacing: 1px;
+  line-height: 18px;
+  font-size: 22px;
+  line-height: 18px;
+  font-weight: 500;
+  font-family: "Golos Text";
+  border-bottom: 1px solid;
+}
+.img-wrapper div h2 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+.img-wrapper div a {
+  padding: 8px 18px;
+  font-size: 25px;
+  border-radius: 35px;
+  border: 2px solid;
+  background-color: #fff;
+  border-color: #fff;
+  color: #121310;
+  text-decoration: none;
+}
+.seller-heading {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 50px;
+}
+.seller-section {
+  position: absolute;
+  top: 327%;
+  width: 100%;
+}
+.seller-heading > div:first-child {
+  width: 80%;
+  color: #000;
+  font-size: 48px;
+  line-height: 42px;
+  padding-inline: 30px;
+  font-weight: 800;
+  font-family: "Golos Text";
+}
+.seller-heading > div:last-child {
+  padding-inline: 15px;
+}
+.seller-heading > div:last-child a {
+  /* width: 10%; */
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #29426e;
+  font-size: 20px;
+  line-height: 42px;
+  padding-inline: 30px;
+  font-weight: 500;
+  font-family: "Golos Text";
+  border-radius: 50px;
+  align-self: flex-end;
+}
+.seller-gallery {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seller-gallery:last-child {
+  margin-bottom: 20px;
+}
+.product-image {
+  width: 360px;
+  height: 360px;
+}
+.product-image > img {
+  border: 1px solid #00000014;
+}
+.product-footer {
+  margin-top: 20px;
+  width: 360px;
+  padding: 20px 15px 25px;
+  text-align: center;
+  padding-top: 0;
+}
+.product-footer > a {
+  text-decoration: none;
+  color: #000;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  font-family: "Golos Text";
+}
+.product-footer span {
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 10px;
+  color: #828282;
+}
+.large-banner {
+  width: 100%;
+  padding-inline: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Golos Text";
+}
+.left-50 {
+  width: 50%;
+  height: 1100px;
+  border-radius: 10px;
+  background-image: url(/stripes.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 20px;
+  color: #fff;
+}
+.left-50 span,
+.right-50 span {
+  position: relative;
+  top: 180px;
+  left: 80px;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  border-bottom: 2px Solid;
+  margin-bottom: 20px;
+  font-size: 25px;
+  padding-bottom: 8px;
+  line-height: 20px;
+  font-family: "Golos Text";
+}
+.left-50 h2,
+.right-50 h2 {
+  position: relative;
+  top: 190px;
+  left: 80px;
+  font-size: 75px;
+  line-height: 60px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-family: "Golos Text";
+  font-weight: 600;
+}
+.left-50 a,
+.right-50 a {
+  position: relative;
+  top: 210px;
+  left: 80px;
+  text-decoration: none;
+  border-radius: 100px;
+  border-width: 2px;
+  padding: 16px 32px;
+  font-size: 24px;
+  color: #012c3c;
+  background-color: #cedd5e;
+  border-color: #cedd5e;
+  border: 2px solid transparent;
+  transition: 0.3s ease-in-out;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.left-50 a:hover,
+.right-50 a:hover {
+  background-color: #fff;
+}
+.right-50 {
+  width: 50%;
+  height: 1100px;
+  border-radius: 10px;
+  background-image: url(/dining-chairs.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+.news-letter {
+  background-color: #012c3c;
+  padding: 30px 0;
+}
+.container {
+  margin-inline: 50px;
+  padding-inline: 15px;
+  display: flex;
+  /* justify-content: space-between; */
+}
+.container-left {
+  padding-left: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.container-left h3 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 28px;
+  font-family: "Golos Text";
+  padding-right: 30px;
+  border-right: 2px solid limegreen;
+}
+.container-left div {
+  color: #fff;
+  font-size: 25px;
+  line-height: 28px;
+  font-family: "Golos Text";
+  padding-left: 30px;
+}
+.container-right {
+  padding-right: 15px;
+  /* flex-grow: 1; */
+  width: 30%;
+}
+.container-right a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+.container-right input {
+  width: 100%;
+  height: 80px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 20px 50px;
+  padding-left: 20px;
+  font-size: 25px;
+}
+.container-right div {
+  position: absolute;
+  right: 30px;
+  color: black;
+  font-size: 25px;
+}
+.strip-img {
+  width: 100%;
+}
+footer {
+  background-color: #ffffff;
+  width: 100%;
+}
+.footer-top {
+  padding-block: 60px;
+  border-bottom: 1px solid gray;
+}
+.footer-top > .footer-container {
+  max-width: 95%;
+  padding-inline: 15px;
+  margin-inline: auto;
+  display: flex;
+}
+.footer-box {
+  padding-inline: 15px;
+}
+.fbox1 {
+  width: 25%;
+}
+.fbox1 img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+.fbox1 p {
+  width: 80%;
+  margin-bottom: 15px;
+  line-height: 26px;
+  font-size: 25px;
+  color: gray;
+  line-height: 35px;
+}
+.fbox2 {
+  width: 16.66%;
+}
+.footer-box div {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+}
+.footer-box ul {
+  list-style: none;
+}
+.footer-box li {
+  padding-bottom: 5px;
+  font-size: 25px;
+  color: gray;
+  line-height: 35px;
+}
+.footer-box li:hover {
+  color: #000;
+}
+.footdiv {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.footdiv > div:last-child {
+  margin-left: 15px;
+  font-weight: 400;
+}
+.footer-bottom {
+  padding-block: 25px;
+}
+.footer-bottom > .footer-container {
+  max-width: 95%;
+  padding-inline: 15px;
+  margin-inline: auto;
+  display: flex;
+  color: gray;
+}
+.footer-bottom > .footer-container div:first-child {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  font-size: 22px;
+}
+.footer-bottom > .footer-container div:last-child {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  gap: 40px;
+  font-size: 22px;
+}
+.footer-container a {
+  color: black;
+  font-size: 25px;
+  margin-left: 10px;
+}
